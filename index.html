@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScriptQuiz</title>
+    <link rel="stylesheet" href="./Assets/style/reset.css" />
+    <link rel="stylesheet" href="./Assets/style/style.css" />
+</head>
+<body>
+
+    <div id="container">
+    <!--Commencement-->
+    <div id="commence">Commence Quiz</div>
+    </div>
+
+    <!--Rules-->
+    <div id="rules">
+    <h2>Jiving Rules</h2>
+    <ol><br>
+        <li><strong>1. </strong> You MUST have fun *\(^o^)/*</li><br>
+        <li><strong>2. </strong> Quiz has a timer - 90 seconds MAX per attempt</li><br>
+        <li><strong>3. </strong> Questions are not individually repeatable - once you click on an answer, it's locked in</li><br>
+        <li><strong>4. </strong> Each incorrect answer will deduct an addition 5 (five) seconds from the timer</li><br>
+        <li><strong>5. </strong> You may test your knowledge with this quiz as many times as you like</li><br>
+        <li><strong>6. </strong> Your score will be shown at the end of the quiz</li><br>
+        <li><strong>7. </strong> At the end of the test, you can restart and or enter your details to be on the leaderboard</li><br>
+    </ol>
+    <div class="buttons">
+        <button id="escape">XxXxX</button>
+        <button id="proceed">GoGoGo</button>
+    </div>
+</div>
+<section id="quizContainer">
+    <div id="quizHBox">
+    <h3>JavaJived Quiz Questions</h3>
+    <div id="timer">
+    <h4>Time Remianing</h4>
+    <h5 id="countDown">90</h5>
+</div>
+</div>
+<!--Questions-->
+<section id="ques">
+    <div>
+   <h2 id="questionNumb">1. </h2>
+   <h3 id="question"></h5>
+</div>
+<div id="multiChoice">
+    <h5 class="choices" id="optionA"></h5>
+    <h5 class="choices" id="optionB"></h5>
+    <h5 class="choices" id="optionC"></h5>
+    <h5 class="choices" id="optionD"></h5>
+</div>
+</section>
+
+</section>
+
+<!--Results-->
+<section id="results">
+    <h5>Your Score:</h5><br>
+    <h5 id="score"> - out of 5</h5>
+    <form id="details">
+        <label for="initials">Initials:</label><br>
+        <input type="text" id="initials" placeholder="Initials Here"><br>
+        <label for="email">Email Address:</label><br>
+        <input type="text" id="email" placeholder="email@email.test"><br>
+        <button type="submit" id="submit" value="Submit">Submit</button><br>
+        <button type="restart" id="exit" value="exitQuiz">Restart</button><br>
+    </form>
+</section>
+<footer id="scores">
+    
+</footer>
+    <script src="./Assets/js/question.js"></script>
+    <script src="./Assets/js/script.js"></script>
+    </body>
+  </html>
