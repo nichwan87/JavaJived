@@ -99,7 +99,7 @@ proceed.addEventListener('click' , ()=> {
         
                 
         //check answer
-        if (inputAns = quePart[index].answer) {
+        if (inputAns === quePart[index].answer) {
             correct++;
         } 
         else { 
